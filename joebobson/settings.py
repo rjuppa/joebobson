@@ -81,17 +81,19 @@ WSGI_APPLICATION = 'joebobson.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',     # '.postgresql_psycopg2', '.mysql', or '.oracle'
-        'NAME': 'joeblog',   # Required to be non-empty string
-        'USER': 'postgres',   # Required to be non-empty string
-        'PASSWORD': 'postgres',
-        'HOST': '',     # Set to empty string for localhost.
-        'PORT': '',     # Set to empty string for default.
-        },
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',     # '.postgresql_psycopg2', '.mysql', or '.oracle'
+#         'NAME': 'joeblog',   # Required to be non-empty string
+#         'USER': 'postgres',   # Required to be non-empty string
+#         'PASSWORD': 'postgres',
+#         'HOST': '',     # Set to empty string for localhost.
+#         'PORT': '',     # Set to empty string for default.
+#         },
+# }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
