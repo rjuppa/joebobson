@@ -15,7 +15,7 @@ sitemaps = {'tags': TagSitemap,
             'categories': CategorySitemap,}
 
 blog_urls = [
-    url(r'^', include('zinnia.urls.capabilities')),
+    # url(r'^', include('zinnia.urls.capabilities')),
     url(r'^search/', include('zinnia.urls.search')),
     url(r'^sitemap/', include('zinnia.urls.sitemap')),
     url(r'^trackback/', include('zinnia.urls.trackback')),
@@ -29,11 +29,13 @@ blog_urls = [
     url(r'^blog/', include('zinnia.urls.archives')),
     url(r'^blog/', include('zinnia.urls.shortlink')),
     url(r'^blog/', include('zinnia.urls.quick_entry')),
-    url(r'^contact/', index, name='index')
+    url(r'^$', index),
 ]
 
 
 urlpatterns = patterns('',
+
+    url(r'^contact/', contact),
     url(r'^tinymce/', include('tinymce.urls')),
     url(r'^weblog/', include('zinnia.urls', namespace='zinnia')),
     url(r'^comments/', include('django_comments.urls')),
