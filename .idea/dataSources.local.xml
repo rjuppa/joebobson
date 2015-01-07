@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django default_old" uuid="d5151a4a-34f5-49dc-ab21-43c22fd39192">
+      <user-name>postgres</user-name>
+      <user-password>dfd2dfd2dfd2dfd2dfd2dfd2</user-password>
+      <schema-pattern>joeblog.pg_catalog joeblog.public</schema-pattern>
+      <default-schemas>joeblog.pg_catalog joeblog.public</default-schemas>
+    </data-source>
+    <data-source name="PostgreSQL - shop@localhost" uuid="29fcb3b3-0d27-49eb-9aaf-2af1be12cc14">
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-pattern>shop.pg_catalog shop.public</schema-pattern>
+      <default-schemas>shop.pg_catalog shop.public</default-schemas>
+    </data-source>
+  </component>
+</project>
