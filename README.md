@@ -7,3 +7,6 @@ Installation
 ============
 1. download it
 2. use pip install -r requirements.txt
+
+
+Staging
